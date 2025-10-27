@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eu e Wiu</title>
+  <style>
+    /* Dark theme styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      color: #00ccff;
+      letter-spacing: 2px;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: #00ccff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.2s ease-in-out;
+    }
+    nav a:hover {
+      color: #00ccff;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    article {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    }
+    article h2 {
+      margin-top: 0;
+      color: #00ccff;
+    }
+    article time {
+      font-size: 0.9rem;
+      color: #999;
+    }
+    article p {
+      margin-top: 1rem;
+    }
+    footer {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 1rem 2rem;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 3rem;
+    }
+    input[type="text"]{
+        background-color: rgb(41, 41, 41);
+        color: white;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+    input[type="file"]::file-selector-button{
+      background-color: rgb(41, 41, 41);
+      color: white;
+      padding: none;
+      border:1px solid black;
+      border-radius: 4px;
+    }
+    input[type="submit"]{
+      background-color: rgb(41, 41, 41);
+      color: white;
+      padding: none;
+      border:1px solid black;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Eu e Wiu</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="integrantes.html">Integrantes</a>
+
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Bem-vindos ao blog meu e de Wiu</h2>
+      <time datetime="2025-08-21">August 21, 2025</time>
+      <p>Nesse site a gente vai postar os principais acontecimentos da aula de bob até o fim do ano, pra ter de recordação no computador do colégio</p>
+    </article>
+    <article>
+      <form id="myForm">
+        <label for="title">Título do post</label><br>
+        <input type="text" id="ptitle" name="ptitle"><br>
+        <label for="content">O que aconteceu?</label><br>
+        <input type="text" id="content" name="content"><br>
+        <label for="image">Foto dos autores</label><br>
+        <input type="file" id="image" name="image"><br>
+        <input type="submit" id="submit" name="submit">
+        </form>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 EueWiu. Todos os direitos reservados.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
